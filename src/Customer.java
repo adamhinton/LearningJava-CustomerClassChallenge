@@ -1,6 +1,6 @@
 public class Customer {
     private String name;
-    private int creditLimit;
+    private double creditLimit;
     private String email;
 
     public Customer(String name, int creditLimit, String email) {
@@ -10,7 +10,7 @@ public class Customer {
     }
 
     public Customer() {
-        this("defaultName", 1000, "default@email.com");
+        this("defaultName", "default@email.com");
     }
 
     public Customer(String name, String email) {
@@ -21,7 +21,7 @@ public class Customer {
         return name;
     }
 
-    public int getCreditLimit() {
+    public double getCreditLimit() {
         return creditLimit;
     }
 
